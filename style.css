@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --light-orange: #f9dbbdff;
+    --salmon-pink: #ffa5abff;
+    --blush: #da627dff;
+    --raspberry-rose: #a53860ff;
+    --chocolate-cosmos: #450920ff;
+    --fonte-titulo: "Jacques Francois Shadow", serif;
+    --fonte-texto: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: var(--light-orange);
+    font-family: var(--fonte-texto);
+    color: var(--chocolate-cosmos);
+    height: 100vh;
+}
+
+header {
+    background-color: var(--raspberry-rose);
+    text-align: center;
+}
+
+h1 {
+    font-family: var(--fonte-titulo);
+    font-size: 3rem;
+    color: var(--blush);
+    padding: 1.5rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--chocolate-cosmos);
+    font-size: 2rem;
+    margin: 0 2rem 1rem 0;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: var(--salmon-pink);
+    transform: scale(0.9);
+    transition: transform 0.3s;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--raspberry-rose);
+    color: var(--light-orange);
+    height: 3rem;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+}
