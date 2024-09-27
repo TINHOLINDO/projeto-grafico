@@ -64,8 +64,14 @@ nav a:hover {
     padding: 2rem;
     border-radius: 15px;
     border: var(--chocolate-cosmos) groove 5px;
-
 }
+
+span{
+    font-family: var(--fonte-titulo);
+    color: var(--light-orange);
+    font-size: 30;
+}
+
 
 footer {
     display: flex;
