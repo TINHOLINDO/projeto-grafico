@@ -1,5 +1,6 @@
+import { pegarCSS , configuraEixo} from "./comum.js"
 
-async function criaGraficoBarra(){
+async function criaGraficoBarra() {
     const url = "https://raw.githubusercontent.com/TINHOLINDO/json-grafico-barras/refs/heads/main/tinho%20json"
     const res = await fetch(url)
     const dados = await res.json()
@@ -8,18 +9,19 @@ async function criaGraficoBarra(){
 
     const data = [
         {
-        x: modelo,
-        y: vendas,
-        type: 'bar'
+            x: modelo,
+            y: vendas,
+            type: 'bar',
+            marker: {
+                color: pegarCSS ('--salmon-pink') 
+            }
         }
     ]
 
-
-const grafico = document.createElement('div')
-grafico.className = 'grafico'
-document.getElementById('caixa-grafico').appendChild(grafico)
-Plotly.newPlot(grafico, data)
-
+    const grafico = document.createElement('div')
+    grafico.className = 'grafico'
+    document.getElementById('caixa-grafico').appendChild(grafico)
+    Plotly.newPlot(grafico, data)
 }
 
 criaGraficoBarra()
