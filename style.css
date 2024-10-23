@@ -1,94 +1,20 @@
-@import url('https://script.google.com/macros/s/AKfycbzXXVBySbEwPXuYpM_iOig-Li5rBzRd_LWLJkVnVfxNgrsgAJaTWONSB48cNypud7B5HQ/exec');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
-}
+@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
 
 :root {
-    --creme: #dad7cd; /* cor clara */
-    --laranja: #a3b18a; /* cor suave */
-    --verde: #588157; /* verde */
-    --marrom: #3a5a40; /* verde escuro */
-    --preto: rgb(0, 0, 0);
-    --branco: #ffffff;
-    --fonte-titulo: "Fascinate Inline", cursive;
-    --fonte-texto: "Gowun Batang", serif;
+    --fonte-principal: "Spicy Rice", serif;
+    --fonte-secundaria: "Protest Strike", sans-serif; /* Added semicolon */
+    --midnight-green: #1a535cff;
+    --robin-egg-blue: #4ecdc4ff;
+    --mint-cream: #f7fff7ff;
+    --light-red: #ff6b6bff;
+    --naples-yellow: #ffe66dff;
 }
 
-body {
-    background-color: var(--creme);
-    font-family: var(--fonte-texto);
-    color: var(--preto);
-    height: 100vh;
-    display: flex; 
-    flex-direction: column;
+body{
+    font-family: var(--fonte-secundaria);
+    background-color: var(--naples-yellow);
 }
 
-header {
-    background-color: var(--laranja);
-    text-align: center;
-}
-
-h1 {
-    font-family: var(--fonte-titulo);
-    font-size: 3.5em;
-    color: var(--marrom);
-    padding: 1em 0;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    font-weight: 400;
-}
-
-nav a {
-    text-decoration: none;
-    color: var(--preto);
-    font-size: 2em;
-    margin: 0 1em;
-    padding: 0.5em;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-nav a:hover {
-    background-color: var(--marrom);
-    color: var(--branco);
-}
-
-.caixa-grafico {
-    margin: 5rem;
-    font-size: 1.5em;
-    background-color: var(--laranja);
-    padding: 2em;
-    border-radius: 20px;
-    border: 5px solid var(--marrom); 
-    box-shadow: 0 px 10px rgba(0, 0, 0, 0.2);
-}
-
-.caixa-grafico__texto {
-    font-size: 1.0em;
-    padding: 2em 0;
-    line-height: 1.5; 
-}
-
-span {
-    font-family: var(--fonte-titulo);
-    color: var(--marrom);
-    font-size: 1.0em;
-}
-
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--laranja);
-    color: var(--preto);
-    width: 100%;
-    height: 3em;
-    margin-top: 2em;
-    font-size: 1.5em;
+h1,h3{
+    font-family: var(--fonte-principal);
 }
